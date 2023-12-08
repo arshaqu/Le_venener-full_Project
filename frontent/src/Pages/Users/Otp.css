@@ -1,0 +1,37 @@
+.bgm-img{
+    background-image: url('../../../Images/otp1.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1600px auto;
+    height: 100vh !important;
+}
+.Regist{
+    margin-top: 20px;
+}
+.inner_boxer {
+    width: 370px;
+    height: 230px; /* Changed height to auto to accommodate varying content */
+    background-color: rgba(256, 256, 256, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 825px black;
+    padding: 20px; /* Added padding to provide spacing inside the box */
+  }
+  .butn{
+    width: 200px;
+    margin-left: 5px;
+    color: white !important;
+    background-color: rgb(28, 28, 28) !important;
+    font-weight: 500;
+    
+}
+.sizing{
+      box-shadow: 0 0 5px grey !important;
+
+  }.inner_boxeril1{
+    width: 370px;
+    height: 230px; /* Changed height to auto to accommodate varying content */
+    background-color: rgba(256, 256, 256, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 825px black;
+    padding: 20px; /* Added padding to provide spacing inside the box */
+  }

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap'); 
+
+.levenner10{
+    font-family: 'Tangerine', cursive;
+    font-size: 40px;
+    color: white;
+}
+.image_leven{
+    height:50px;
+    color: white;
+}
+
+.fontweights{
+    font-weight: 30px !important;
+}
+
+@media (max-width:420px) {
+    .headers{
+        width: 1500px auto;
+        height: 1000px;
+    }
+    .logo-sidebar{
+        
+    }
+}

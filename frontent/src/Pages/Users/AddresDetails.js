@@ -1,0 +1,176 @@
+import React, { useState } from 'react'
+import Header from './Header'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { showLoading, hideLoading } from '../../redux/alertsSlice'
+import toast from 'react-hot-toast'
+
+function AddresDetails() {
+   const dispatch = useDispatch()
+    const navigate = useNavigate()
+    const initialValues = {
+        name : '',
+        email:'',
+        phone:'',
+        alternative:'',
+        post:'',
+        city:'',
+        area:'',
+        address:''
+    }
+    const [values,setvalues] = useState (initialValues)
+    // const [orderId ,setOrderId] = useState('')
+    // console.log("orderid",orderId);
+  
+ 
+    const onFinish = async()=>{
+      try {
+        dispatch(showLoading())
+        const response = await axios.post("/api/user/address", { values }, {
+            headers: { Authorization: "Bearer " + localStorage.getItem('token') },
+          });
+          const response1 = await axios.post("/api/user/order", {}, {
+            headers: { Authorization: "Bearer " + localStorage.getItem("token") },
+          });
+          console.log("response1",response1.data.orderData._id);
+
+          // setOrderId();
+          dispatch(hideLoading())
+          setvalues(initialValues)
+          navigate(`/checkout-payment/${response1.data.orderData._id}`)
+          if(toast.data.success){
+            toast.success("Address Added Successfully")
+          }
+          else{
+            toast.error("Address not Added Please Fil the Blanks")
+          }
+        } catch (error) {
+          dispatch(hideLoading())
+
+          console.log(error);
+        }
+      }
+
+
+
+  return (
+<div>
+    <Header/>
+    <div style={{fontFamily:'initial' ,marginLeft:'470px',width:'auto'}} className='container flex mt-3 '>
+   <h4  className='m-2'>Cart</h4>
+    <div style={{width:'200px' , height:'3px' ,backgroundColor:'gray'}} className='ml-2 mt-4 '></div>
+    <h4 style={{ color: 'red' }} className='m-2'>Delivery</h4>
+    <div style={{width:'220px' , height:'3px' ,backgroundColor:'gray'}} className='ml-2 mt-4 '></div>
+    <h4 className='m-2'>Payment</h4>
+   
+   </div>
+      <div style={{marginLeft:'100px'}} className="p ">
+        <h2 style={{fontFamily:'sans-serif' ,color:'#86A789'}} className="text-center mt-4 mr-40">ADDRESS DETAILS</h2>
+      </div>
+      <div style={{width:'1000px',marginLeft:'320px'}}  className="  mt-10 w-96 p-8 bg-white border align-center border-gray-500  rounded-lg shadow hover:bg-gray-500 hover:text-white dark:bg-gray-800 dark:border-gray-800 dark:hover:bg-gray-800">
+        <form >
+          <div style={{width:'935px'}} className="mb-4">
+           
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <input
+                    onChange={(e)=>{setvalues({  ...values,name:e.target.value})}}
+                type="text"
+                name="name"
+                className="w-full mt-3 text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div>
+              <input
+              onChange={(e)=>{
+                setvalues({  ...values,email:e.target.value})}}
+                type="text"
+                name="email"
+                className="w-full mt-3 text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Email"
+                // value={{}}
+                required
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4 mt-4">
+            <div>
+              <input
+              onChange={(e)=>{setvalues({  ...values,phone:e.target.value})}}
+                type="text"
+                name="phone"
+                className="w-full text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+            <div>
+              <input
+              onChange={(e)=>{setvalues({  ...values,alternative:e.target.value})}}
+                type="text"
+                name="alternative"
+                className="w-full text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Alternative Number"
+                required
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4 mt-4">
+            <div>
+              <input
+              onChange={(e)=>{setvalues({  ...values,post:e.target.value})}}
+                type="text"
+                name="post"
+                className="w-full text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Post Code"
+                required
+              />
+            </div>
+            <div>
+              <input
+               onChange={(e)=>{setvalues({  ...values,area:e.target.value})}}
+                type="text"
+                name="area"
+                className="w-full text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="area"
+                required
+              />
+            </div>
+          </div>
+          
+          <label for="countries" className="block mb-2 text-sm font-medium text-gray-400 mt-3 ml-2 dark:text-white">Select an option</label>
+<select onChange={(e)=>{setvalues({  ...values,city:e.target.value})}} id="countries" type='text'  required name='city' className="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+  <option  disabled selected>Choose a City</option>
+  <option >Ernakulam</option>
+  <option >Kozhikode</option>
+  <option >Malappuram</option>
+  <option >Thrivadrum</option>
+</select>
+
+          <input
+           onChange={(e)=>{setvalues({  ...values,address:e.target.value})}}
+            type="text"
+            name="address"
+            className="w-full mt-4 text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Address"
+            required
+          />
+          <button
+          type='button'
+            className="mt-5 ml-80 focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+            onClick={onFinish}
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  )};
+  
+
+
+export default AddresDetails

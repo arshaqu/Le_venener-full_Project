@@ -1,0 +1,316 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
+
+
+.banner1{
+  
+    /* background-position: center; */
+}
+.items1{
+    height: 500px;
+    /* background-color: #EF9595(235, 235, 235); */
+    /* width: rem; */
+    /* margin-left: -41px; */
+}
+.image1{
+    width: 380px;
+    margin-left: 100px;
+}
+.ptaging10{
+    font-family: inherit;
+    /* text-align: center; */
+    /* margin-left: 415px; */
+}
+.Bridetag1 { 
+    font-weight: bold;
+    width: auto;
+    height: 100px;
+    margin-left: 10px;
+    margin-bottom: 651px;
+    color: #141E46; /* Fixed color code */
+    margin-top: 400px; /* Add margin-top here */
+} 
+
+.texter5 {
+    margin-left: 80px;
+     margin-top: -641px;
+    position: absolute;
+    font-family: 'Playfair Display', serif;
+    font-size: x-large;
+}
+.button_correcting{
+    /* position: absolute; */
+    
+}
+.image2{
+    margin-left: 978px;
+    margin-top: -225px;
+    width: 300px;
+
+    /* margin-bottom: -10px;   */
+}
+.Bridetag2{
+    font-weight: bold;
+    width: auto;
+    height: 100px;
+    margin-bottom: 600px;
+    color: #141E46; /* Fixed color code */
+    margin-top: 400px; /* Add margin-top here */
+    margin-left: 100px;
+    
+}
+.texter6{
+    margin-left: 120px;
+    margin-top: -581px;
+   position: absolute;
+   font-family: 'Playfair Display', serif;
+   width: auto;
+    font-size: x-large;
+}
+
+.aboutpage{
+    height: 400px;
+    background-color: #a09090;
+}
+.about_tag{
+    color: white;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+    margin-right: 50px;
+    padding: 15px;
+    font-weight: 100;
+}
+.about_us_details{
+    color: white;
+    padding: 35px;
+    margin-left: 20px;
+    font-family: 'Lora', serif;
+    font-size: large;
+    font-weight: 100;
+}
+
+.banner1 {
+    /* Add your styles here */
+    background-image: url('../../../src/assets/Banner5.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+  
+
+
+
+
+
+
+
+  /* Larger than 768px (md) */
+  @media (max-width: 450px) {
+    .banner1{
+        width: 420px;
+        height:300px
+    }
+    .image1{
+        width: 300px;
+        margin: 0;
+        margin-left: -500px;
+        margin-top: -100px;
+        /* position: absolute; */
+    }
+    .texter5 {
+      font-size: 5px;
+      margin-left: -200px;
+    }
+    .Bridetag1{
+        font-size: 20px;
+        position:absolute;
+        margin-left: -100px;
+        margin-top: -500px;
+    }.image2{
+        width: 200px;
+        margin-left: -113px;
+        margin-top: 50px !important;
+        position: absolute;
+        /* width: 100px; */
+    }.texter5{
+        font-size: 20px;
+        margin-top: -60px;
+        margin-left: px;
+        position: absolute;
+    }.texter6{
+        font-size: 15px;
+        margin-top: 350px;
+        margin-left: -150px;
+        }
+    .cat{
+        margin-left: -200px;
+    }.cata{
+        margin-left: 20px;
+    }
+    .Bridetag2 {
+        font-size: 20px;
+        position:absolute;
+        margin-left: -113px;
+        margin-top: 5px;
+
+    }.about_us_details{
+        font-size: 10px;
+    }
+    .button_correcting1{
+        margin-top: 400px !important;
+        position: absolute;
+        margin-left: -21px;
+
+    }
+    .button_correcting{
+        margin-top: 305px;
+        margin-left: -21px;
+    }
+  
+    .texter6 {
+      /* Add your styles here */
+    }.span1{
+        
+    }
+    /* Product List Page */
+    .searching1{
+        width: 250px !important;
+    }
+
+    /* Product Detail Page */
+    .image_detail{
+        margin-left: 25px;
+        width: 250px;
+        position: absolute;
+    }.detaising{
+        /* margin-left: -200px; */
+        margin-top: 400px;
+        margin-left: -110px;
+    }
+    .fonting{
+        font-size: 8px;
+    }.widthing{
+        width: 35px !important;
+        /* margin-left: px; */
+    }
+
+
+
+    /*add to Cart Page */
+    .fullpage{
+        margin-left: 120px;
+        /* width: 20px; */
+    }.fonting1{
+        font-size: 13px;
+        margin-left: -110px;
+    }.fonting2{
+        font-size: 13px;
+        margin-left: -80px;
+    }.paddings{
+        margin-left:-400px ;
+        font-size: 7px;
+    }.paddings1{
+        margin-left: -380px;
+        font-size: 10px;
+    }.paddings3{
+        font-size: 7px;
+        margin-left: -390px;
+    }.buttns{
+        margin-left: -400px;
+        width: 10px;
+        height: 30px;
+    }.chats{
+        color: white;
+        margin-left: -25px;
+    }.buttns2{
+        margin-left: -620px;
+        margin-top: 18px;
+        /* position: absolute; */
+        width: 20px;
+        height: 30px;
+    }
+    .addcart{
+        font-size: 2px;
+        /* margin-top: -10px; */
+        margin-left: -40px;
+    }
+
+
+    /* cart Page */
+    .mini_header{
+        margin-left: 70px !important;
+        width: 10px;
+    }.buttoning{
+        margin-left: 1px !important;
+    }.total{
+        margin-left: 1px !important;
+    }
+
+    /* Address */
+    .addressng{
+        margin-left: -340px !important;
+    }
+    /* Checkout */
+    .checkoutImage{
+        width: 770px;
+        height: 800px;
+    }
+  }
+
+  
+  /* Larger than 1024px (lg) */
+  @media (max-width: 1024px) {
+    .Bridetag1 {
+      width: 50px;
+      
+    }
+  
+    .Bridetag2 {
+      /* Add your styles here */
+    }
+  }
+  
+  /* Larger than 1280px (xl) */
+  @media (min-width: 1280px) {
+    /* Add your styles for extra-large screens here */
+  }
+
+  @media (max-width: 391px) {
+    .banner1{
+        width: 400px;
+        height:300px
+    }.cata{
+        margin-left: 100px;
+    }.texter5{
+        margin-left: px;
+        font-size: 15px;
+        position: absolute;
+    }.block1{
+        margin-left: 70px;
+    }.block2{
+        margin-left: 8px;
+    }.block3{
+        margin-top: 10px;
+    }.ptaging{
+        font-size: 13px;
+    }.about_us_details{
+        margin-top: -50px;
+    }
+
+}
+/* @media  (max-width: 821px){
+    .fullpage{
+        margin-left: -500px !important;
+    }
+    .hesder{
+        width: 100px !important;
+    }
+    .pageing1{
+        margin-left: -500px !important;
+    }
+} */

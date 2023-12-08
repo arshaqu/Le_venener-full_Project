@@ -1,0 +1,53 @@
+.bgf-img{
+    background-image: url('../../../Images/for3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+.Forget{
+  margin-right: -60px;
+  font-size: 30px; /* Reduced font size for better alignment */
+  text-align: center;
+  font-family: 'Lora', serif;
+  margin-bottom: 15px; /* Increased top margin for spacing */
+  font-weight: bold;
+  color: #094c44;
+}
+.inner_boxeril {
+    width: 441px;
+    height: 265px; /* Changed height to auto to accommodate varying content */
+    background-color: rgba(256, 256, 256, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 825px black;
+    padding: 20px; /* Added padding to provide spacing inside the box */
+  }
+  .submitbtn {
+    width: 200px;
+    margin-left: 43px;
+    color: white !important;
+    background-color: rgb(28, 28, 28) !important;
+    font-weight: 600;
+    margin-top: -70px !important;
+    
+}
+
+.sizingz{
+      box-shadow: 0 0 5px grey !important;
+    width: 400px !important;
+  }
+  .texters{
+    /* margin-left: 15px; */
+    text-shadow: 10px;
+    font-weight: 700;
+    color: #094c44;
+  }
+
+
+
+  /* Edit Email Css */
+.bgf-img1{
+  background-image: url('../../../Images/for3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

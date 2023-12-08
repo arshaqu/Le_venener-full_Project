@@ -1,0 +1,129 @@
+/* Register.css */
+.Authentication {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    image-rendering: auto;
+  }
+  
+  .img {
+    max-width: 100%;
+    /* margin-left: 10px; */
+  }
+  
+  .bg {
+    background-image: url('../../../Images/0483.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .inner_box {
+    width: 400px;
+    height: auto; /* Changed height to auto to accommodate varying content */
+    background-color: rgba(256, 256, 256, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    padding: 20px; /* Added padding to provide spacing inside the box */
+  }
+  
+  .Regist {
+    font-size: 28px; /* Reduced font size for better alignment */
+    text-align: center;
+    font-family: 'Lora', serif;
+    margin-top: 20px; /* Increased top margin for spacing */
+    font-weight: bold;
+    color: #481910;
+  }
+  
+  .usersicon.icons {
+    width: 25px;
+    margin-right: 10px; /* Added margin-right for spacing between icon and input */
+    color: #481910;
+
+  }
+  
+  .userCharacter {
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0; /* Reset margin for consistency */
+
+
+  }
+  
+  .inputB {
+    height: 36px;
+    background-color: rgba(256, 256, 256, 0.5);
+    border-radius: 10px;
+    border: none;
+    font-family: 'Lora', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 12px;
+    width: 100%;
+    margin: 5px 0; /* Adjusted margin for spacing */
+    color: #481910;
+    box-shadow: 0 0 6px black;
+  }
+  
+  .combo {
+
+    display: flex;
+    align-items: center; /* Vertically align icons and labels */
+  }
+  
+  .btn {
+    margin-left: 22px; /* Adjusted margin for spacing */
+    margin-top: 20px;
+    width: 1px; /* Made the button full width */
+    border: 1px solid black;
+    transition: all 0.5s;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px ;
+    color: red;
+  }
+  
+  /* Additional styles for Ant Design */
+  .ant-form-vertical .ant-form-item-label {
+    padding-bottom: 5px; /* Adjusted label spacing */
+  }
+  
+  .icom {
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+  .css-dev-only-do-not-override-18iikkb{
+    color: #481910;
+    width: 317px;
+  }
+  .ant-input{
+    margin-bottom: 15px !important;
+  }
+  .input.ant-input{
+    background-color: rgba(256, 256, 256, 0.1) !important; 
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+  
+  } 
+  .extra{
+    background-color: rgba(256,256,256,0.5)!important;
+  }.userCharacter{
+  background: #ffffff1f  !important;
+  }
+  
+  .eye{
+    font-size: 25px;
+    position: relative;
+    right: 34px;
+    top: 11px;
+  }
+  
+  .contend{
+    color: #481910;
+
+    display: flex;
+  }
+  

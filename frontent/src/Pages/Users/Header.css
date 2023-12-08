@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@300&display=swap');
+
+
+
+.levenner_tag {
+  font-family: Agbalumo;
+  color: #769278;
+}
+
+.texts {
+  font-family: Josefin Sans;
+  font-weight: bold;
+  text-align: center;
+  /* Center-align the text */
+  position: absolute;
+  font-size: 18px;
+
+  left: 50%;
+  /* Move it 50% from the left */
+  
+}

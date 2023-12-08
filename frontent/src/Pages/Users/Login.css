@@ -1,0 +1,26 @@
+
+
+
+.inputB1 {
+  width: 92% !important;
+  margin-left: 20px;
+  height: 36px;
+  background-color: rgba(256, 256, 256, 0.5);
+  border-radius: 10px;
+  font-family: 'Lora', serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px 12px;
+  margin: 5px 0; /* Adjusted margin for spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Box shadow */
+}
+.btn{
+  width: 90% !important; 
+  margin-left: 20px;
+  margin-top: 20px;
+  border: 1px solid black;
+  transition: all 0.5s;
+}
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 10px grey;
+}
